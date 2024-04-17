@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Android Project Collection</string>
+    <string name="btLayout">LAYOUT EXERCISE</string>
+    <string name="bt2">Button</string>
+    <string name="bt3">Calculator</string>
+    <string name="bt4">Connect 3</string>
+    <string name="name1">Cebu Institute of Technology - Cebu</string>
+    <string name="btLike">Like</string>
+    <string name="btShare">Share</string>
+    <string name="name2">Tan Loi</string>
+    <string name="btButtonExercise">Button Exercise</string>
+    <string name="win_text">%1$s wins!</string>
+    <string name="curr_player">%1$s\'s turn</string>
+    <string name="reset">Reset</string>
+</resources>
