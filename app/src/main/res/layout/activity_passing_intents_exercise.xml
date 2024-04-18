@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Student Registration Form"
+            android:textAlignment="center"
             android:textSize="20sp" />
 
         <LinearLayout
@@ -30,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Complete Name"
+                android:text="Complete Name*"
                 android:textSize="16sp" />
 
             <LinearLayout
@@ -68,7 +69,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gender"
+                android:text="Gender*"
                 android:textSize="16sp" />
 
             <RadioGroup
@@ -115,7 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Marital Status"
+                    android:text="Marital Status*"
                     android:textSize="16sp" />
 
                 <Spinner
@@ -135,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Student ID"
+                    android:text="Student ID*"
                     android:textSize="16sp" />
 
                 <EditText
@@ -156,7 +157,7 @@
                     android:layout_width="43dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Program"
+                    android:text="Program*"
                     android:textSize="16sp" />
 
                 <Spinner
@@ -176,7 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Year Level"
+                    android:text="Year Level*"
                     android:textSize="16sp" />
 
                 <Spinner
@@ -196,7 +197,7 @@
                     android:layout_width="105dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
-                    android:text="Birth Date"
+                    android:text="Birth Date*"
                     android:textSize="16sp" />
 
                 <EditText
@@ -218,7 +219,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Home Address"
+                    android:text="Home Address*"
                     android:textSize="16sp" />
 
                 <EditText
@@ -240,7 +241,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Phone Number"
+                    android:text="Phone Number*"
                     android:textSize="16sp" />
 
                 <EditText
@@ -262,7 +263,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Email Address"
+                    android:text="Email Address*"
                     android:textSize="16sp" />
 
                 <EditText

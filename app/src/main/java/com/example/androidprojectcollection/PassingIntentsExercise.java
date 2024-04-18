@@ -85,16 +85,15 @@ public class PassingIntentsExercise extends AppCompatActivity {
                 String lname = lastName.getText().toString();
 
                 String gender;
-                if(rMale.isChecked()){
+                if (rMale.isChecked()) {
                     gender = "Male";
-                }else if(rFemale.isChecked()){
+                } else if (rFemale.isChecked()) {
                     gender = "Female";
-                }else if(rOthers.isChecked()) {
+                } else if (rOthers.isChecked()) {
                     gender = "Others";
-                }else {
+                } else {
                     gender = "Unknown";
                 }
-
                 String bDate = birthDate.getText().toString();
                 String pNumber = phoneNumber.getText().toString();
                 String emailAdd = emailAddress.getText().toString();
@@ -104,22 +103,26 @@ public class PassingIntentsExercise extends AppCompatActivity {
                 String maritalStatus = dropdownMaritalStatus.getSelectedItem().toString();
                 String studid = studentID.getText().toString();
 
-                Intent intent = new Intent(PassingIntentsExercise.this, PassingIntentsExercise2.class);
+                if(bDate.isEmpty() || pNumber.isEmpty() || emailAdd.isEmpty() || homeAdd.isEmpty() || program.isEmpty() || yearLevel.isEmpty() || maritalStatus.isEmpty() || studid.isEmpty()) {
+                    Toast.makeText(PassingIntentsExercise.this, "Please input the required areas.", Toast.LENGTH_SHORT).show();
+                }else{
+                    Intent intent = new Intent(PassingIntentsExercise.this, PassingIntentsExercise2.class);
 
-                intent.putExtra("fname_key", fname);
-                intent.putExtra("gender_key", gender);
-                intent.putExtra("pnum_key", pNumber);
-                intent.putExtra("lname_key", lname);
-                intent.putExtra("bdate_key", bDate);
-                intent.putExtra("email_add_key", emailAdd);
-                intent.putExtra("home_add_key", homeAdd);
-                intent.putExtra("program_key", program);
-                intent.putExtra("yearlvl_key", yearLevel);
-                intent.putExtra("studid_key", studid);
-                intent.putExtra("status_key", maritalStatus);
+                    intent.putExtra("fname_key", fname);
+                    intent.putExtra("gender_key", gender);
+                    intent.putExtra("pnum_key", pNumber);
+                    intent.putExtra("lname_key", lname);
+                    intent.putExtra("bdate_key", bDate);
+                    intent.putExtra("email_add_key", emailAdd);
+                    intent.putExtra("home_add_key", homeAdd);
+                    intent.putExtra("program_key", program);
+                    intent.putExtra("yearlvl_key", yearLevel);
+                    intent.putExtra("studid_key", studid);
+                    intent.putExtra("status_key", maritalStatus);
 
-                startActivity(intent);
-                Toast.makeText(PassingIntentsExercise.this, "Form Submitted Successfully", Toast.LENGTH_SHORT).show();
+                    startActivity(intent);
+                    Toast.makeText(PassingIntentsExercise.this, "Form Submitted Successfully", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
