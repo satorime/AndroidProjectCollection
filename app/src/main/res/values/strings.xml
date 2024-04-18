@@ -12,4 +12,7 @@
     <string name="win_text">%1$s wins!</string>
     <string name="curr_player">%1$s\'s turn</string>
     <string name="reset">Reset</string>
+    <string name="btnDescription">Button in the Color Matching</string>
+    <string name="btnReturn">Return</string>
+    <string name="btnAutoWin">Auto Win</string>
 </resources>

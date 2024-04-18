@@ -12,6 +12,15 @@
         android:theme="@style/Theme.AndroidProjectCollection"
         tools:targetApi="31">
         <activity
+            android:name=".ColorMatching"
+            android:exported="false" />
+        <activity
+            android:name=".PassingIntentsExercise2"
+            android:exported="false" />
+        <activity
+            android:name=".PassingIntentsExercise"
+            android:exported="false" />
+        <activity
             android:name=".connect3"
             android:exported="false" />
         <activity

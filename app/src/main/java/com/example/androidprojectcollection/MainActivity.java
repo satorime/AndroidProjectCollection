@@ -1,5 +1,6 @@
 package com.example.androidprojectcollection;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btButton;
     private Button btCalcu;
     private Button btConnect;
+    private Button btPassingIntent;
+    private Button btColorMatching;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +54,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btPassingIntent = findViewById(R.id.btnPassingIntent);
+        btPassingIntent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PassingIntentsExercise();
+            }
+        });
 
+        btColorMatching = findViewById(R.id.btnMidterm);
+        btColorMatching.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ColorMatchingExercise();
+            }
+        });
+    }
+
+    private void ColorMatchingExercise() {
+        Intent intent = new Intent(MainActivity.this, ColorMatching.class);
+        startActivity(intent);
+    }
+
+    private void PassingIntentsExercise() {
+        Intent intent = new Intent(MainActivity.this, PassingIntentsExercise.class);
+        startActivity(intent);
     }
 
     public void LayoutExercise(){
