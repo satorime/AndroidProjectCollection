@@ -32,7 +32,7 @@
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="First Name" />
 
@@ -50,7 +50,7 @@
 
                 <TextView
                     android:id="@+id/textView11"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Last Name" />
 
@@ -68,7 +68,7 @@
 
                 <TextView
                     android:id="@+id/textView28"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Student ID" />
 
@@ -85,7 +85,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Program" />
 
@@ -97,12 +97,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Year Level" />
 
@@ -120,7 +120,7 @@
 
                 <TextView
                     android:id="@+id/textView13"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Gender" />
 
@@ -138,7 +138,7 @@
 
                 <TextView
                     android:id="@+id/textView15"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Birth Date" />
 
@@ -156,7 +156,7 @@
 
                 <TextView
                     android:id="@+id/textView17"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Home Address" />
 
@@ -174,7 +174,7 @@
 
                 <TextView
                     android:id="@+id/textView19"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Phone Number" />
 
@@ -192,7 +192,7 @@
 
                 <TextView
                     android:id="@+id/textView21"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Email Address" />
 
@@ -210,7 +210,7 @@
 
                 <TextView
                     android:id="@+id/textView33"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="Marital Status" />
 
