@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btConnect;
     private Button btPassingIntent;
     private Button btColorMatching;
+    private Button btMenu;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -69,6 +71,14 @@ public class MainActivity extends AppCompatActivity {
                 ColorMatchingExercise();
             }
         });
+
+        btMenu = findViewById(R.id.btnMenus);
+        btMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MenuExercise();
+            }
+        });
     }
 
     private void ColorMatchingExercise() {
@@ -97,6 +107,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void connect3Exercise(){
         Intent intent = new Intent(MainActivity.this, connect3.class);
+        startActivity(intent);
+    }
+
+    private void MenuExercise() {
+        Intent intent = new Intent(MainActivity.this, MenuExercise.class);
         startActivity(intent);
     }
 }
