@@ -18,7 +18,7 @@ public class MenuExercise extends AppCompatActivity {
     private int[] textColors = {Color.BLACK, Color.WHITE};
     private String[] directions = {"left", "right", "down", "up"};
 
-    private String[] fruits = {"CS234", "CS244", "CSIT284", "CSIT226", "CSIT228"};
+    private String[] codes = {"CS234", "CS244", "CSIT284", "CSIT226", "CSIT228"};
     Button btnTransformer;
     Random random;
 
@@ -75,8 +75,8 @@ public class MenuExercise extends AppCompatActivity {
             }
             Toast.makeText(this, "Direction Change Object Item is clicked", Toast.LENGTH_SHORT).show();
         }else if(item.getItemId() == R.id.mItemTextChange){
-            String fruit = fruits[random.nextInt(fruits.length)];
-            btnTransformer.setText(fruit);
+            String code = codes[random.nextInt(codes.length)];
+            btnTransformer.setText(code);
             Toast.makeText(this, "Text Change Object Item is clicked", Toast.LENGTH_SHORT).show();
         }else if(item.getItemId() == R.id.mItemSizeChange){
             btnTransformer.setScaleX(random.nextInt(1500) / 1000.0f  + 0.5f);
