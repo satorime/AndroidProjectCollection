@@ -15,4 +15,11 @@
     <string name="btnDescription">Button in the Color Matching</string>
     <string name="btnReturn">Return</string>
     <string name="btnAutoWin">Auto Win</string>
+    <string-array name="titles">
+        <item>Magellan\'s Cross</item>
+        <item>10000 Roses</item>
+        <item>Simala Church</item>
+        <item>Busay Tops Cebu</item>
+        <item>Fort San Pedro</item>
+    </string-array>
 </resources>

@@ -17,7 +17,6 @@ public class MenuExercise extends AppCompatActivity {
     private int[] buttonColors = {Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, Color.MAGENTA};
     private int[] textColors = {Color.BLACK, Color.WHITE};
     private String[] directions = {"left", "right", "down", "up"};
-
     private String[] codes = {"CS234", "CS244", "CSIT284", "CSIT226", "CSIT228"};
     Button btnTransformer;
     Random random;

@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btPassingIntent;
     private Button btColorMatching;
     private Button btMenu;
+    private Button btMaps;
 
 
     @SuppressLint("MissingInflatedId")
@@ -79,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
                 MenuExercise();
             }
         });
+
+        btMaps = findViewById(R.id.btnMaps);
+        btMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MapsExercise();
+            }
+        });
     }
 
     private void ColorMatchingExercise() {
@@ -112,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void MenuExercise() {
         Intent intent = new Intent(MainActivity.this, MenuExercise.class);
+        startActivity(intent);
+    }
+
+    private void MapsExercise() {
+        Intent intent = new Intent(MainActivity.this, MapsExercise.class);
         startActivity(intent);
     }
 }
